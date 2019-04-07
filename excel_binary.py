@@ -27,7 +27,8 @@ class xlsb :
         
     def xlsb_export_csv(self,sheet_number,outputname):
           """
-		Enter the sheet number, and ouput file name in the format of .csv that you need to 			read and create a data frame, you can use itertions to upload multiple sheets.
+		Enter the sheet number, and ouput file name in the format of .csv that you need to 
+		read and create a data frame, you can use itertions to upload multiple sheets.
 	  """
 	  df =[]
           with open_xlsb(self.inputfilename) as wb:
@@ -39,7 +40,8 @@ class xlsb :
                   
     def xlsb_export_xlsx(self,sheet_number,outputname,sheet_name="Sheet1"):
 	 """
-		Enter the sheet number,output file name and sheet name that you need to read and 			create a data frame, you can use itertions to export multiple sheets.
+		Enter the sheet number,output file name and sheet name that you need to read and
+		create a data frame, you can use itertions to export multiple sheets.
 	 """        
 	df =[]
         with open_xlsb(self.inputfilename) as wb:
