@@ -7,14 +7,22 @@ We need to enter the filename to create the instance of the xlsb class, then cal
 Formats for the code written 
 
 ###############################################################################################
-# create instance with the filename 
+##create instance with the filename 
+
 newfile = xlsb("test.xlsb")
-# read dataset to a data frame 
+
+##read dataset to a data frame 
+
 data_frame_xlsb = newfile.read_xlsb(1)
-# export xlsb file to csv format
+
+##export xlsb file to csv format
+
 newfile.xlsb_export_csv(1,"test_output.csv")
-# export xlsb file to xlsx format (sheet name is optional, by default sheet name is set to Sheet1)
+
+##export xlsb file to xlsx format (sheet name is optional, by default sheet name is set to Sheet1)
+
 newfile.xlsb_export_xlsx(1,"test_output.xlsx","first_sheet")
+ #############################################################################################
 
 
 
